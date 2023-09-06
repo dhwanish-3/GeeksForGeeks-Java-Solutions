@@ -1,7 +1,4 @@
-// add elements to 2d list of integers
-// get size of array
-
-//I want to add elements to particular index of 2d List
+import java.util.*;
 class Solution {
     public List<List<Integer>> printGraph(int V, int edges[][]) {
         List<List<Integer>> adj = new ArrayList<List<Integer>>();

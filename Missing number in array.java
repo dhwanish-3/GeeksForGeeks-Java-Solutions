@@ -5,7 +5,7 @@ class Solution {
             xor ^= array[i];
             xor ^= i + 1;
         }
-        x ^= n;
+        xor ^= n;
         return xor;
     }
 }
