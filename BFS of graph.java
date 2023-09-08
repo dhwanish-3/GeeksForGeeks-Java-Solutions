@@ -1,3 +1,5 @@
+import java.util.*;
+
 class Solution {
     // Function to return Breadth First Traversal of given graph.
     public ArrayList<Integer> bfsOfGraph(int V, ArrayList<ArrayList<Integer>> adj) {
@@ -11,7 +13,7 @@ class Solution {
             sol.add(cur);
             for (int i = 0; i < adj.get(cur).size(); i++) {
                 int next = adj.get(cur).get(i);
-                if (!visited(next)) {
+                if (!visited[next]) {
                     q.add(next);
                     visited[next] = true;
                 }
