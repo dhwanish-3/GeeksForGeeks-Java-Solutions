@@ -47,7 +47,7 @@ class Solution
         }
         return -1;
     }
-    public static ArrayList<Integer> KDistanceNodes(Node root, int target , int k)
+    public static ArrayList<Integer> KDistanceNodes(Node root, int target, int k)
     {
         ArrayList<Integer> sol = new ArrayList<>();
         kDistance(root, target, k, sol);
