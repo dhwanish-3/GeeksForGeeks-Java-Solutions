@@ -1,4 +1,3 @@
-import java.util.*;
 
 class Solution {
     static int minCandy(int n, int ratings[]) {
