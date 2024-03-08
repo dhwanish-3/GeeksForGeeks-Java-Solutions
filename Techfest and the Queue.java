@@ -49,7 +49,7 @@ class Solution {
             long cur = i;
             while (cur > 1) {
                 sol++;
-                cur /= small[(int)cur];
+                cur /= small[(int) cur];
             }
         }
         return sol;

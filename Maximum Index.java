@@ -1,5 +1,5 @@
-class Solution{
-    static int maxIndexDiff(int a[], int n) { 
+class Solution {
+    static int maxIndexDiff(int a[], int n) {
         int min[] = new int[n];
         int max[] = new int[n];
         min[0] = a[0];
@@ -23,4 +23,3 @@ class Solution{
         return sol;
     }
 }
-

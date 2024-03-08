@@ -2,14 +2,12 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-class Solution
-{
-    int min_sprinklers(int gallery[], int n)
-    {
+class Solution {
+    int min_sprinklers(int gallery[], int n) {
         List<int[]> sprinklers = new ArrayList<>();
         for (int i = 0; i < n; i++) {
             if (gallery[i] > -1) {
-                sprinklers.add(new int[]{i - gallery[i], i + gallery[i]});
+                sprinklers.add(new int[] { i - gallery[i], i + gallery[i] });
             }
         }
         Collections.sort(sprinklers, (a, b) -> a[0] - b[0]);

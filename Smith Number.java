@@ -3,13 +3,14 @@ class Solution {
         if (n == 1) {
             return false;
         }
-        for (int i = 2;i <= Math.sqrt(n); i++) {
+        for (int i = 2; i <= Math.sqrt(n); i++) {
             if (n % i == 0) {
                 return false;
             }
         }
         return true;
     }
+
     static int sumOfDigits(int n) {
         int sum = 0;
         while (n > 0) {
@@ -19,6 +20,7 @@ class Solution {
         }
         return sum;
     }
+
     static int sumOfPrimeFactor(int n) {
         int sum = 0;
         int f = 1;
@@ -34,6 +36,7 @@ class Solution {
         }
         return sum;
     }
+
     static int smithNum(int n) {
         if (isPrime(n)) {
             return 0;

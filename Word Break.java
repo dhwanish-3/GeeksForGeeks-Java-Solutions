@@ -1,8 +1,7 @@
 import java.util.ArrayList;
 import java.util.HashSet;
 
-class Solution
-{
+class Solution {
     private static int helper(int i, String s, HashSet<String> set) {
         if (i == s.length()) {
             return 1;
@@ -14,14 +13,14 @@ class Solution
                 }
             }
         }
-        return 0;   
+        return 0;
     }
-    public static int wordBreak(int n, String s, ArrayList<String> dictionary )
-    {
+
+    public static int wordBreak(int n, String s, ArrayList<String> dictionary) {
         HashSet<String> set = new HashSet<>();
         for (String word : dictionary) {
             set.add(word);
-        }   
+        }
         return helper(0, s, set);
     }
 }

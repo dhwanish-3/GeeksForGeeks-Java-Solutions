@@ -1,7 +1,6 @@
 import java.util.ArrayList;
 
-class Solution
-{
+class Solution {
     ArrayList<Integer> search(String pat, String txt) {
         ArrayList<Integer> sol = new ArrayList<>();
         int dif = txt.length() - pat.length();

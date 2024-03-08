@@ -1,6 +1,5 @@
-class Solution{
-    static boolean match(String wild, String pattern)
-    {
+class Solution {
+    static boolean match(String wild, String pattern) {
         int n = wild.length();
         int m = pattern.length();
         boolean dp[][] = new boolean[n + 1][m + 1];

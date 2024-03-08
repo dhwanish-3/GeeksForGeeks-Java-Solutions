@@ -11,7 +11,8 @@ class Solution {
                 return map.get(b) - map.get(a);
             } else {
                 return a - b;
-            }});
+            }
+        });
         for (int i = 0; i < N; i++) {
             map.put(arr[i], map.getOrDefault(arr[i], 0) + 1);
             pq = new PriorityQueue<>((a, b) -> {
@@ -19,7 +20,8 @@ class Solution {
                     return map.get(b) - map.get(a);
                 } else {
                     return a - b;
-                }});
+                }
+            });
             for (int key : map.keySet()) {
                 pq.add(key);
             }

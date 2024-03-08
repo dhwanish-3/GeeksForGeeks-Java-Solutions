@@ -1,8 +1,7 @@
 import java.util.*;
 
-class Solution{
-    static ArrayList<ArrayList<Integer>> transitiveClosure(int N, int graph[][])
-    {
+class Solution {
+    static ArrayList<ArrayList<Integer>> transitiveClosure(int N, int graph[][]) {
         ArrayList<ArrayList<Integer>> sol = new ArrayList<>();
         int n = graph.length;
         for (int i = 0; i < n; i++) {

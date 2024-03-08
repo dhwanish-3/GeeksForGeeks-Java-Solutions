@@ -7,6 +7,7 @@ class Solution {
         }
         return true;
     }
+
     public int smallestSubstring(String S) {
         int len = S.length();
         int minLen = Integer.MAX_VALUE;
