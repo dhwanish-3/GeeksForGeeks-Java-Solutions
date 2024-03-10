@@ -1,10 +1,8 @@
 import java.util.HashMap;
 
-class Solution
-{
-    //Function to return the name of candidate that received maximum votes.
-    public static String[] winner(String arr[], int n)
-    {
+class Solution {
+    // Function to return the name of candidate that received maximum votes.
+    public static String[] winner(String arr[], int n) {
         HashMap<String, Integer> hash = new HashMap<>();
         String[] sol = new String[2];
         sol[1] = "0";
