@@ -3,7 +3,6 @@ class Solution {
         int n = mat.length;
         int count = n * n;
         int[] sol = new int[count];
-        int temp = 2;
         int i = 0, j = 0;
         int k = 0;
         sol[k] = mat[i][j];
