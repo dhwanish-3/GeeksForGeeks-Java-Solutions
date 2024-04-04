@@ -1,5 +1,17 @@
 import java.util.ArrayList;
 
+class Node {
+    int data;
+    Node left;
+    Node right;
+
+    Node(int data) {
+        this.data = data;
+        this.left = null;
+        this.right = null;
+    }
+}
+
 class Solution {
     public int kthCommonAncestor(Node root, int k, int x, int y) {
         Node cur = root;
@@ -12,13 +24,14 @@ class Solution {
                 arr.add(cur.data);
                 cur = cur.left;
             } else {
-                arr.add(cur.data);   
+                arr.add(cur.data);
                 break;
             }
         }
         if (k <= arr.size()) {
             return arr.get(arr.size() - k);
-        } else return -1;
-        
+        } else
+            return -1;
+
     }
 }
